@@ -8,9 +8,21 @@ import { useAuth } from '../hooks/useAuth';
 import { database } from '../services/firebase';
 import '../styles/room.scss';
 
+type FirebaseQuestions = Record<string, {
+    author: {
+        name: string,
+        avatar: string,
+    }
+    content: string,
+    isAnswerd: boolean,
+    isHighlighted: boolean
+}>
+
+
 type RoomParams = {
     id: string;
 }
+
 
 export function Room() {
 
@@ -26,9 +38,12 @@ export function Room() {
         const roomRef = database.ref(`rooms/${roomId}`);
 
         roomRef.once('value', room => {
-            console.log(room.val());
+            const databaseRoom = room.val();
+            const firebaseQuestions:FirebaseQuestions = databaseRoom.question ?? {};
+
+            const parsedQuestions = Object.entries(firebaseQuestions)
         })
-    }, []);
+    }, [roomId]);
 
     async function handleSendQuestion(event: FormEvent) {
 
