@@ -19,6 +19,12 @@
         margin-right: 8px;
     }
 
+    &.outlined {
+        background: #FFF;
+        color: #835AFD;
+        border: solid 1px #835AFD;
+    }
+
     &:not(:disabled):hover {
         filter: brightness(0.9);
     }
