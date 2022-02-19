@@ -38,6 +38,11 @@ export function Home() {
       return;
     }
 
+    if(roomRef.val().endedAt) {
+      alert(`The selected room no longer exists.`);
+      return;
+    }
+
     history.push(`/rooms/${roomCode}`);
   }
 
