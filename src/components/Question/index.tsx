@@ -33,7 +33,7 @@ export function Question({
         className={cx(
             'question',
             { answered: isAnswered}, // aplica a classe answered caso isAnswered returns True
-            { highlighted: isHighlighted}, // aplica a classe highlighted caso isHighlighted returns True
+            { highlighted: isHighlighted && !isAnswered}, // aplica a classe highlighted caso isHighlighted returns True
         )}
     >
       <p>{content}</p>

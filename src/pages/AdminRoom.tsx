@@ -24,6 +24,8 @@ export function AdminRoom() {
   const roomId = params.id;
   const { title, questions } = useRoom(roomId);
 
+  // console.log(questions)
+
   async function handleEndRoom() {
     await database.ref(`rooms/${roomId}`).update({
       endedAt: new Date(),
@@ -77,8 +79,13 @@ export function AdminRoom() {
                 key={question.id}
                 content={question.content}
                 author={question.author}
+                isAnswered={question.isAnswered}
+                isHighlighted={question.isHighlighted}
               >
-                <button
+
+                {!question.isAnswered &&  (
+                  <>
+                  <button
                   type="button"
                   onClick={() => handleCheckQuestionAsAnswered(question.id)}
                 >
@@ -90,6 +97,10 @@ export function AdminRoom() {
                 >
                   <img src={answerImg} alt="Dar destaque à pergunta" />
                 </button>
+                </>
+                )
+          }
+
                 <button
                   type="button"
                   onClick={() => handleDeleteQuestion(question.id)}
