@@ -135,8 +135,7 @@
             height: 1px;
             background: #A8A8B3;
             margin-right: 16px;
-        }
-
+    
         &::after { 
             content: '';
             flex: 1;
@@ -147,13 +146,28 @@
 
     }
 
-    // development of the responsivity of the application
+  
+}
 
-    @media screen and (min-width: 768px) {
+// development of the responsivity of the application
 
-      display: inline-flex;
-      align-content: center;
-      
-    }
 
+@media screen and (max-width: 690px) {
+
+  #page-auth {
+
+    display: inline;
+    width: 100vw;
+
+  aside {
+    height: 100vh;
+  }
+
+
+  main {  
+    padding: 6rem 1rem 12rem 1rem;
+    height: 100vh;
+  }
+}
+}
 }
