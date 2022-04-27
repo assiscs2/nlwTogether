@@ -1,7 +1,7 @@
 import { FormEvent, useState } from "react";
 import { useParams } from "react-router-dom";
 
-import logoImg from "../assets/images/logo.svg";
+import logoImgDark from "../assets/images/logo-dark.svg";
 import { Button } from "../components/Button";
 import { Question } from "../components/Question";
 import { RoomCode } from "../components/RoomCode";
@@ -66,7 +66,7 @@ export function Room() {
     <div id="page-room">
       <header>
         <div className="content">
-          <img src={logoImg} alt="letmeask" />
+          <img src={logoImgDark} alt="letmeask" />
           <RoomCode code={params.id} />
         </div>
       </header>

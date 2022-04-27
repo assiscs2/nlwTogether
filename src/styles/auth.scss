@@ -6,7 +6,7 @@
   aside {
     flex: 7;
 
-    background: #835afd;
+    // background: #835afd;
     color: #fff;
 
     display: flex;
@@ -28,7 +28,7 @@
       font-size: 1.2rem;
       line-height: 32px;
       margin-top: 16px;
-      color: #f8f8f8;
+      // color: #f8f8f8;
     }
   }
 
@@ -42,8 +42,20 @@
     justify-content: center;
 
     flex-direction: column;
+
   }
 
+  header {
+    
+    margin-left: -8rem;
+
+    top: 0;
+    padding-top: 1rem;
+    margin-right: 1rem;
+
+
+  }
+  
   .main-content {
     display: flex;
 
@@ -68,7 +80,7 @@
         height: 50px;
         border-radius: 8px;
         padding: 0 16px;
-        background: #fff;
+        // background: #fff;
         border: 1px solid #a8a8b3;
       }
 
@@ -84,7 +96,7 @@
 
     p {
       font-size: 1rem;
-      color: #737380;
+      color: #737380ce;
       margin-top: 16px;
 
       a {
@@ -98,7 +110,7 @@
     height: 50px;
     border-radius: 8px;
     font-weight: 500;
-    background: #ea4335;
+    // background: #ea4335;
     color: #fff;
 
     display: flex;

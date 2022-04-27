@@ -1,8 +1,8 @@
 #page-room {
 
   width: 100vw;
-  overflow-y: hidden;
-  overflow: scroll;
+  // overflow-y: hidden;
+  // overflow: scroll;
 
   header {
     padding: 24px;
@@ -43,7 +43,7 @@
       h1 {
         font-family: "Poppins", sans-serif;
         font-size: 24px;
-        color: #29292e;
+        // color: #29292e;
       }
 
       span {
@@ -51,7 +51,7 @@
         background: #e559f9;
         border-radius: 9999px;
         padding: 8px 16px;
-        color: #fff;
+        // color: #fff;
         font-weight: 500;
         font-size: 14px;
       }
@@ -63,8 +63,8 @@
         border: 0;
         padding: 16px;
         border-radius: 8px;
-        background: #fefefe;
-        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04s);
+        // background: #fefefe;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1s);
         resize: vertical;
         min-height: 180px;
       }
@@ -87,7 +87,7 @@
 
           > span {
             margin-left: 8px;
-            color: #29292e;
+            // color: #29292e;
             font-weight: 500;
             font-size: 14px;
           }
