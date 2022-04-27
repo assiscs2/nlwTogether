@@ -15,7 +15,7 @@ body, input, .room-code, .button.outlined, .question {
 }
 
 textarea {
-    background: ${props => props.theme.colors.background};
+    background: ${props => props.theme.colors.textArea};
 }
 
 h1, span, h2, .question p, .user-info > span, textarea::placeholder, textarea {

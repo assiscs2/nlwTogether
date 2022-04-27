@@ -8,7 +8,7 @@ export default {
 
         background: '#222', 
         text: '#FFF',
-        textArea: '#4c4c4c',
+        textArea: '#2c2c2c',
 
         switchOn: '#414242',
         switchOff: '#292929'
